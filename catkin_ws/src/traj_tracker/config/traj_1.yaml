@@ -1,0 +1,21 @@
+# Where xdi and y di with i = 1, ... , N are the desired trajectory points. Also, dt is the timestep for the desired trajectory.
+# Populate the list_of_x and list_of_y for a square trajectory. The global coordinates of the square vertices are
+# {(3,3), (8,3), (8,8), (3,8)}. The trajectory should be 10 times a single square trajectory. The overall duration of the trajectory
+# (for all the 10 times of tracking) should be 60 seconds.
+#
+# list_of_x: [xd0 , x d1 , ... , xdn ]
+# list_of_y: [yd0 , yd1, ... , y dn ]
+# timestep: dt
+
+
+list_of_x: [3., 3., 3., 3., 3., 3., 3., 3.,
+            3., 3.625, 4.25,  4.875, 5.5,   6.125, 6.75,  7.375,
+            8., 8., 8., 8., 8., 8., 8., 8.,
+            8., 7.375, 6.75,  6.125, 5.5,   4.875, 4.25,  3.625,
+            3.]
+list_of_y: [3., 3.625, 4.25,  4.875, 5.5,   6.125, 6.75,  7.375,
+            8., 8., 8., 8., 8., 8., 8., 8.,
+            8., 7.375, 6.75,  6.125, 5.5,   4.875, 4.25,  3.625,
+            3., 3., 3., 3., 3., 3., 3., 3.,
+            3]
+timestep: 0.1
