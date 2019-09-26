@@ -1,8 +1,0 @@
-prefix=/home/zxp-s-works/Desktop/Mobile_Rob/catkin_ws/install
-
-Name: traj_tracker
-Description: Description of traj_tracker
-Version: 0.0.0
-Cflags: 
-Libs: -L/home/zxp-s-works/Desktop/Mobile_Rob/catkin_ws/install/lib 
-Requires: 

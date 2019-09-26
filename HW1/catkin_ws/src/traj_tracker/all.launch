@@ -1,0 +1,13 @@
+<launch>
+
+    <!--    For square trajectory-->
+    <rosparam command="load" file="$(find traj_tracker)/config/traj_1.yaml" param="trajectory_description" />
+
+    <!--    For 'M R' trajectory-->
+    <!--    <rosparam command="load" file="$(find traj_tracker)/config/traj_MR.yaml" param="trajectory_description" />-->
+
+    <node name="turtlesim1" pkg="turtlesim" type="turtlesim_node" />
+
+    <node name="tracker" pkg="traj_tracker" type="tracker.py" output="screen" />
+
+</launch>
