@@ -54,13 +54,16 @@ class TurtleBot:
         except rospy.ServiceException as exc:
             print("Service did not process request: " + str(exc))
 
-    def set_init_pose(self, x, y, theta):
+    def set_no_pen(self):
         rospy.wait_for_service('/turtle1/set_pen')
         set_pen = rospy.ServiceProxy('/turtle1/set_pen', SetPen)
         try:
             set_pen(0, 0, 0, 5, 1)
         except rospy.ServiceException as exc:
             print("Service did not process request: " + str(exc))
+
+    def set_init_pose(self, x, y, theta):
+        self.set_no_pen()
         rospy.wait_for_service('/turtle1/teleport_absolute')
         set_pose = rospy.ServiceProxy('/turtle1/teleport_absolute', TeleportAbsolute)
         try:
@@ -96,12 +99,12 @@ class TurtleBot:
         # Set the initial position of the turtle
         # for _ in np.arange(0, 30):
         #     self.rate.sleep()
-        self.set_init_pose(5.5, 5.5, 0)    # center
+        # self.set_init_pose(5.5, 5.5, 0)    # center
         # self.set_init_pose(0, 11, 0)    # top-left
         # self.set_init_pose(11, 11, 0)    # top-right
         # self.set_init_pose(0, 0, 0)    # bottom-left
         # self.set_init_pose(11, 0, 0)    # bottom-right
-        # self.set_init_pose(1, 1, pi/2.2)    # for 'M R'
+        self.set_init_pose(1, 1, pi/2.2)    # for 'M R'
 
         # Moves the turtle to follow the trajectory in traj_*.yaml
         desire_pose = Pose()
@@ -113,19 +116,10 @@ class TurtleBot:
         rospy.loginfo('rate is: ' + str(1 / self.timestep))
         tic = rospy.get_time()
 
-        for loop in np.arange(0, 10):
+        for loop in np.arange(0, 1):
             rospy.loginfo("********** Now is the loop " + str(loop) + ". **********")
 
             for t in np.arange(0, len(self.desire_traj['list_of_x']) - 2):
-                # Uncomment for 'MR' trajactory
-                # if t == 72 * 4 - 1:
-                #     self.stop()
-                #     self.set_init_pose(6, 1.05, pi/2)
-                #     self.stop()
-                #     # for _ in np.arange(100):
-                #     #     self.rate.sleep()
-                #     t = 72 * 4 + 2
-
                 # calculate pose, speed for control
                 # rospy.loginfo(t)
                 desire_pose.x = self.desire_traj['list_of_x'][t]
@@ -217,7 +211,11 @@ class TurtleBot:
                 self.velocity_publisher.publish(vel_msg)
 
                 # Call set_pen service
-                self.set_error_pen(desire_pose)
+                # Uncomment for 'MR' trajactory
+                if (t >= 72 * 4 - 1) and (t <= 72 * 4 + 22):
+                    self.set_no_pen()
+                else:
+                    self.set_error_pen(desire_pose)
 
                 # Publish at the desired rate.
                 self.rate.sleep()
