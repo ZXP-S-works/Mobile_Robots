@@ -1,0 +1,8 @@
+prefix=/home/zxp-s-works/Desktop/Mobile_Rob/practice/catkin_ws/devel
+
+Name: cadillac
+Description: Description of cadillac
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/zxp-s-works/Desktop/Mobile_Rob/practice/catkin_ws/devel/lib 
+Requires: 

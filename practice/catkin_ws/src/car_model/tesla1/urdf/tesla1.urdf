@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="tesla1">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0.4263 -1.725 0.66023"
+        rpy="0 0 0" />
+      <mass
+        value="0.13608" />
+      <inertia
+        ixx="6.957E-06"
+        ixy="-6.1075E-09"
+        ixz="3.4144E-07"
+        iyy="0.00017425"
+        iyz="6.043E-08"
+        izz="0.00017497" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tesla1/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79608 0.82353 0.93725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tesla1/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="plate">
+    <inertial>
+      <origin
+        xyz="-0.0078304 -1.3571 -0.60073"
+        rpy="0 0 0" />
+      <mass
+        value="0.015097" />
+      <inertia
+        ixx="2.5034E-06"
+        ixy="4.5302E-08"
+        ixz="-1.62E-09"
+        iyy="1.0374E-05"
+        iyz="9.3236E-12"
+        izz="1.2868E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tesla1/meshes/plate.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tesla1/meshes/plate.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="plate"
+    type="fixed">
+    <origin
+      xyz="0.42318 -0.37646 0.66051"
+      rpy="1.5708 -0.011511 3.1416" />
+    <parent
+      link="base_link" />
+    <child
+      link="plate" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

@@ -6,3 +6,5 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs(gtest)
 subdirs(beginner_tutorials)
+subdirs(car_model/cadillac)
+subdirs(car_model/tesla1)

@@ -268,6 +268,12 @@ beginner_tutorials_BINARY_DIR:STATIC=/home/zxp-s-works/Desktop/Mobile_Rob/practi
 //Value Computed by CMake
 beginner_tutorials_SOURCE_DIR:STATIC=/home/zxp-s-works/Desktop/Mobile_Rob/practice/catkin_ws/src/beginner_tutorials
 
+//Value Computed by CMake
+cadillac_BINARY_DIR:STATIC=/home/zxp-s-works/Desktop/Mobile_Rob/practice/catkin_ws/build/car_model/cadillac
+
+//Value Computed by CMake
+cadillac_SOURCE_DIR:STATIC=/home/zxp-s-works/Desktop/Mobile_Rob/practice/catkin_ws/src/car_model/cadillac
+
 //The directory containing a CMake configuration file for catkin.
 catkin_DIR:PATH=/opt/ros/kinetic/share/catkin/cmake
 
@@ -356,6 +362,9 @@ roscpp_traits_DIR:PATH=/opt/ros/kinetic/share/roscpp_traits/cmake
 //The directory containing a CMake configuration file for rosgraph_msgs.
 rosgraph_msgs_DIR:PATH=/opt/ros/kinetic/share/rosgraph_msgs/cmake
 
+//The directory containing a CMake configuration file for roslaunch.
+roslaunch_DIR:PATH=/opt/ros/kinetic/share/roslaunch/cmake
+
 //The directory containing a CMake configuration file for rospy.
 rospy_DIR:PATH=/opt/ros/kinetic/share/rospy/cmake
 
@@ -364,6 +373,12 @@ rostime_DIR:PATH=/opt/ros/kinetic/share/rostime/cmake
 
 //The directory containing a CMake configuration file for std_msgs.
 std_msgs_DIR:PATH=/opt/ros/kinetic/share/std_msgs/cmake
+
+//Value Computed by CMake
+tesla1_BINARY_DIR:STATIC=/home/zxp-s-works/Desktop/Mobile_Rob/practice/catkin_ws/build/car_model/tesla1
+
+//Value Computed by CMake
+tesla1_SOURCE_DIR:STATIC=/home/zxp-s-works/Desktop/Mobile_Rob/practice/catkin_ws/src/car_model/tesla1
 
 //The directory containing a CMake configuration file for xmlrpcpp.
 xmlrpcpp_DIR:PATH=/opt/ros/kinetic/share/xmlrpcpp/cmake
@@ -470,7 +485,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=4
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
