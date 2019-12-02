@@ -1,0 +1,8 @@
+prefix=/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/devel
+
+Name: frontier_SLAM
+Description: Description of frontier_SLAM
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/devel/lib 
+Requires: 

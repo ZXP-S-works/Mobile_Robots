@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="cadillac">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <mass
+        value="0" />
+      <inertia
+        ixx="0"
+        ixy="0"
+        ixz="0"
+        iyy="0"
+        iyz="0"
+        izz="0" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cadillac/meshes/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.6 0.6 0.6 0.6" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cadillac/meshes/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="wheel">
+    <inertial>
+      <origin
+        xyz="-0.97999999964988 -7.87159273949456E-05 -1.42304139727257"
+        rpy="0 0 0" />
+      <mass
+        value="459.775155079402" />
+      <inertia
+        ixx="39.6954094130967"
+        ixy="-0.00289596372375865"
+        ixz="7.49291085990443E-05"
+        iyy="24.5769675337192"
+        iyz="-0.00261180903723515"
+        izz="24.4761206314078" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cadillac/meshes/wheel.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.1 0.1 0.1 0.1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://cadillac/meshes/wheel.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="wheel"
+    type="fixed">
+    <origin
+      xyz="3.9312 -7.0996 3.6009"
+      rpy="1.5708 0 0" />
+    <parent
+      link="base_link" />
+    <child
+      link="wheel" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

@@ -1,0 +1,8 @@
+prefix=/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/install
+
+Name: cadillac
+Description: Description of cadillac
+Version: 1.0.0
+Cflags: 
+Libs: -L/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/install/lib 
+Requires: 
