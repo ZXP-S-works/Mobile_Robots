@@ -127,7 +127,9 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/build/gtest/cmake_install.cmake")
   include("/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/build/frontier_SLAM/cmake_install.cmake")
+  include("/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/build/charging_bot/cmake_install.cmake")
   include("/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/build/cadillac/cmake_install.cmake")
+  include("/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/build/tbo/cmake_install.cmake")
 
 endif()
 

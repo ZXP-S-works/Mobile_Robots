@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="tbo">
+  <link
+    name="shell">
+    <inertial>
+      <origin
+        xyz="1.0406 1.4781E-06 0.73381"
+        rpy="0 0 0" />
+      <mass
+        value="0.10719" />
+      <inertia
+        ixx="2.1879E-05"
+        ixy="-2.0938E-10"
+        ixz="7.8017E-06"
+        iyy="5.025E-05"
+        iyz="5.1271E-11"
+        izz="4.3587E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tbo/meshes/shell.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tbo/meshes/shell.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="tires">
+    <inertial>
+      <origin
+        xyz="0.72613 -0.0010849 0.25199"
+        rpy="0 0 0" />
+      <mass
+        value="54.041" />
+      <inertia
+        ixx="1.2505"
+        ixy="9.5821E-07"
+        ixz="2.8427E-11"
+        iyy="2.2488"
+        iyz="9.5977E-09"
+        izz="1.2505" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tbo/meshes/tires.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://tbo/meshes/tires.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="tires"
+    type="fixed">
+    <origin
+      xyz="0 0 0"
+      rpy="0 0 0" />
+    <parent
+      link="shell" />
+    <child
+      link="tires" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>

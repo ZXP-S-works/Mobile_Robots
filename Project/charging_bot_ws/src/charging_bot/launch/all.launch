@@ -1,0 +1,12 @@
+<launch>
+  <!-- Gazebo turtlebot world -->
+  <include file="$(find turtlebot_gazebo)/launch/turtlebot_world.launch">
+          <arg name="world_file" value="/home/zxp-s-works/Desktop/Mobile_Rob/Project/gazebo_parking_lot/parking_lot_zxp/parking_lot"/>
+  </include>
+  <!-- Gmapping -->
+  <include file="$(find turtlebot_gazebo)/launch/gmapping_demo.launch"/>
+  <!-- Move base -->
+  <include file="$(find turtlebot_navigation)/launch/includes/move_base.launch.xml"/>
+  <!-- Rviz view navigation -->
+  <include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch"/>
+</launch>
