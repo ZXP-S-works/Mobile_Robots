@@ -7,5 +7,6 @@
 subdirs(gtest)
 subdirs(frontier_SLAM)
 subdirs(charging_bot)
+subdirs(custom_navigation)
 subdirs(cadillac)
 subdirs(tbo)

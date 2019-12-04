@@ -1,2 +1,2 @@
-cadillac:charging_bot:frontier_SLAM:tbo
+cadillac:charging_bot:custom_navigation:frontier_SLAM:tbo
 -DCATKIN_DEVEL_PREFIX=/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/devel -DCMAKE_INSTALL_PREFIX=/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/install -G Unix Makefiles

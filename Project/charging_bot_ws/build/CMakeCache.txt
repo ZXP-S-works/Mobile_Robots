@@ -281,6 +281,12 @@ charging_bot_SOURCE_DIR:STATIC=/home/zxp-s-works/Desktop/Mobile_Rob/Project/char
 cpp_common_DIR:PATH=/opt/ros/kinetic/share/cpp_common/cmake
 
 //Value Computed by CMake
+custom_navigation_BINARY_DIR:STATIC=/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/build/custom_navigation
+
+//Value Computed by CMake
+custom_navigation_SOURCE_DIR:STATIC=/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/src/custom_navigation
+
+//Value Computed by CMake
 frontier_SLAM_BINARY_DIR:STATIC=/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/build/frontier_SLAM
 
 //Value Computed by CMake
@@ -470,7 +476,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=7
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=8
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

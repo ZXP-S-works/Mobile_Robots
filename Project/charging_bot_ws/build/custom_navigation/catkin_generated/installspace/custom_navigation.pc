@@ -1,0 +1,8 @@
+prefix=/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/install
+
+Name: custom_navigation
+Description: Description of custom_navigation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zxp-s-works/Desktop/Mobile_Rob/Project/charging_bot_ws/install/lib 
+Requires: 

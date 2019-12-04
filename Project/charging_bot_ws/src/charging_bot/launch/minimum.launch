@@ -7,6 +7,7 @@
   <include file="$(find turtlebot_gazebo)/launch/gmapping_demo.launch"/>
   <!-- Move base -->
   <include file="$(find turtlebot_navigation)/launch/includes/move_base.launch.xml"/>
+<!--  <include file="$(find custom_navigation)/launch/includes/move_base.launch.xml"/>-->
   <!-- Rviz view navigation -->
   <include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch"/>
 </launch>

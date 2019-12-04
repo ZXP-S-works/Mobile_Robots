@@ -47,6 +47,7 @@ class RecordPose:
 if __name__ == '__main__':
     try:
         r = RecordPose()
-        r.record('PoseNow')
+        pos_name = raw_input("Name the current pose: ")
+        r.record(pos_name)
     except rospy.ROSInterruptException:
         pass
