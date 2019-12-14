@@ -1,2 +1,5 @@
 *.zip
 ./Project/*.zip
+*.mp4
+*.gz
+*.mp4

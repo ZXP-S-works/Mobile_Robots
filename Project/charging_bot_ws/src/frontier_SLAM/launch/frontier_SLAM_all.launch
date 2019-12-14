@@ -11,5 +11,5 @@
   <!-- Rviz view navigation -->
   <include file="$(find turtlebot_rviz_launchers)/launch/view_navigation.launch"/>
   <!-- Explor_lite frontier SLAM-->
-  <include file="$(find explore_lite)/launch/explore.launch"/>
+  <include file="$(find explore_lite)/launch/explore_costmap.launch"/>
 </launch>

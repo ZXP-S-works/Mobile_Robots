@@ -25,8 +25,8 @@ from go_to_specific_point_on_map import GoToPose
 if __name__ == '__main__':
 
     # Read information from yaml file
-    # with open("../config/observe_pose.yaml", 'r') as stream:
-    with open("route.yaml", 'r') as stream:
+    with open("../config/observe_pose.yaml", 'r') as stream:
+    # with open("route.yaml", 'r') as stream:
         dataMap = yaml.load(stream)
 
     try:
@@ -51,7 +51,7 @@ if __name__ == '__main__':
             rospy.loginfo("Reached %s pose", name[:-4])
 
             # Take a photo
-            if camera.take_picture(name):
+            if camera.take_picture('../images' + name):
                 rospy.loginfo("Saved image " + name)
             else:
                 rospy.loginfo("No images received")

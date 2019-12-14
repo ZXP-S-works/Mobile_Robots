@@ -40,7 +40,7 @@ class GoToPose():
 	rospy.loginfo("Wait for the action server to come up")
 
 	# Allow up to 5 seconds for the action server to come up
-	self.move_base.wait_for_server(rospy.Duration(5))
+	self.move_base.wait_for_server(rospy.Duration(10))
 
     def goto(self, pos, quat):
 

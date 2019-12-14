@@ -2,17 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e7d7ea17-cc4d-4aa0-a13b-8243d1e1c785" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW1/Zhu_Xupeng_001814074_hw1.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/Zhu_Xupeng_001814074_hw1.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW1/Zhu_Xupeng_001814074_hw1/HW1 Report.odt" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/Zhu_Xupeng_001814074_hw1/HW1 Report.odt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW1/Zhu_Xupeng_001814074_hw1/Photo &amp; Video/MR.mp4" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/Zhu_Xupeng_001814074_hw1/Photo &amp; Video/MR.mp4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW1/Zhu_Xupeng_001814074_hw1/Photo &amp; Video/MR.png" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/Zhu_Xupeng_001814074_hw1/Photo &amp; Video/MR.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW1/Zhu_Xupeng_001814074_hw1/source.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/Zhu_Xupeng_001814074_hw1/source.tar.gz" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW1/catkin_ws/src/traj_tracker/all.launch" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/catkin_ws/src/traj_tracker/all.launch" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW1/catkin_ws/src/traj_tracker/config/traj_MR.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/catkin_ws/src/traj_tracker/config/traj_MR.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HW1/catkin_ws/src/traj_tracker/scripts/tracker.py" beforeDir="false" afterPath="$PROJECT_DIR$/HW1/catkin_ws/src/traj_tracker/scripts/tracker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/.~lock.Caffe Bot Note.odt#" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/helloworld/turtlebot" beforeDir="false" afterPath="$PROJECT_DIR$/Project/helloworld/turtlebot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/helloworld/turtlebot/go_to_specific_point_on_map.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/helloworld/turtlebot/go_to_specific_point_on_map.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project/helloworld/turtlebot/goforward_and_avoid_obstacle.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project/helloworld/turtlebot/goforward_and_avoid_obstacle.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,18 +17,24 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1RNtKSqhf3FNjAhVahXAtO27XQK" />
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Project/charging_bot_ws" />
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -62,5 +63,11 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1828" y="1021" key="FileChooserDialogImpl" timestamp="1576165044407">
+      <screen x="1080" y="724" width="1920" height="1080" />
+    </state>
+    <state x="1828" y="1021" key="FileChooserDialogImpl/1080.724.1920.1080/0.24.1080.1896@1080.724.1920.1080" timestamp="1576165044407" />
   </component>
 </project>
